@@ -1,6 +1,18 @@
+import fs from "fs";
 import { cleanMatchupData, UStoEU, redundantLines, getNameId } from "./aux.js";
 
-export const getPinnacleData = (matchupsData, straights) => {
+export const getPinnacleData = () => {
+
+    // const matchupsData = await getAPIData(matchups_url, apiKey)
+    const matchupsData = JSON.parse(fs.readFileSync("./data/matchups.json", "utf8"))
+    const straights = JSON.parse(fs.readFileSync("./data/straight.json", "utf8"))
+    // const leagues = await getAPIData(leagues_url, apiKey)
+    // const straight  = await getAPIData(straight_url, apiKey)
+    // fs.writeFileSync("./data/matchups.json", JSON.stringify(matchupsData, null, 4));
+    // fs.writeFileSync("./data/leagues.json", JSON.stringify(leagues, null, 4));
+    // fs.writeFileSync("./data/straight.json", JSON.stringify(straight, null, 4));
+
+
     cleanMatchupData(matchupsData)
     let totalNameData = [];
     let ids = [];
