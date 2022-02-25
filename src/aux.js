@@ -7,8 +7,11 @@ const unnecessaryKeys = [
     "liveMode", "rotation", "state",
 ]
 
-// Lines that are unnecessary in the value for the key "parent"
+// Lines that are unnecessary in the value for the key "parent" in pinnacle data
 export const redundantLines = ["correct score", "winning margin"];
+
+
+
 
 export const UStoEU = val => (val >= 0) ? val / 100 + 1 : 100 / Math.abs(val) + 1
 
