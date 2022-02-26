@@ -1,5 +1,7 @@
+import fetch from "node-fetch"
+
 // remove these keys
-const unnecessaryKeys = [
+const unnecessaryKeysPinnacle = [
     "ageLimit", "altTeaser", "external",
     "featureOrder", "hasAltSpread", "hasAltTotal",
     "hasLive", "isBetshareEnabled", "isFeatured",
@@ -7,18 +9,17 @@ const unnecessaryKeys = [
     "liveMode", "rotation", "state",
 ]
 
+export const redundantValuesGGBet = [ "id", "v", "score1", "score2", "team1_id", "team2_id", "isLive", "slug", "hash", "actual_at" ]
+
 // Lines that are unnecessary in the value for the key "parent" in pinnacle data
 export const redundantLines = ["correct score", "winning margin"];
-
-
-
 
 export const UStoEU = val => (val >= 0) ? val / 100 + 1 : 100 / Math.abs(val) + 1
 
 export const cleanMatchupData = (matchupsData) => {
     for (const matchup of matchupsData) {
         for (const key of Object.keys(matchup)) {
-            if (unnecessaryKeys.includes(key)) {
+            if (unnecessaryKeysPinnacle.includes(key)) {
                 try {
                     // console.log(`deleting: ${key}`)
                     delete matchup[key]

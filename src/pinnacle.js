@@ -1,26 +1,28 @@
 import fs from "fs";
-import { cleanMatchupData, UStoEU, redundantLines, getNameId } from "./aux.js";
+import { leaguesUrl, matchupsUrl, straightUrl, pinnacleKey } from "./constants.js";
+import { cleanMatchupData, UStoEU, redundantLines, getNameId, getAPIData } from "./aux.js";
 
-export const getPinnacleData = () => {
-
-    // const matchupsData = await getAPIData(matchups_url, apiKey)
+export const getPinnacleData = async () => {
+    // const matchupsData = await getAPIData(matchupsUrl, pinnacleKey)
+    // const straights = await getAPIData(straightUrl, pinnacleKey)
     const matchupsData = JSON.parse(fs.readFileSync("./data/matchups.json", "utf8"))
     const straights = JSON.parse(fs.readFileSync("./data/straight.json", "utf8"))
     // const leagues = await getAPIData(leagues_url, apiKey)
     // const straight  = await getAPIData(straight_url, apiKey)
     // fs.writeFileSync("./data/matchups.json", JSON.stringify(matchupsData, null, 4));
     // fs.writeFileSync("./data/leagues.json", JSON.stringify(leagues, null, 4));
-    // fs.writeFileSync("./data/straight.json", JSON.stringify(straight, null, 4));
-
+    // fs.writeFileSync("./data/straight.json", JSON.stringify(straights, null, 4));
 
     cleanMatchupData(matchupsData)
     let totalNameData = [];
     let ids = [];
 
+    let league = "";
+
     for (const matchup of matchupsData) {
         for (const [key, value] of Object.entries(matchup)) {
-            if (key === "parent") {
-                try {
+            try {
+                if (key === "parent") {
                     // Push both teams of one match to the array
                     if (value !== null) {
                         const teams = [...value.participants].map(el => el.name)
@@ -39,9 +41,13 @@ export const getPinnacleData = () => {
                         }
                     }
                 }
-                catch (err) {
-                    console.log(err)
+                else if (league.length === 0 && key === "league") {
+                    league = value.name;
                 }
+            }
+            catch (err) {
+                console.log(err)
+                return;
             }
         }
     }
@@ -123,8 +129,6 @@ export const getPinnacleData = () => {
                                     bets: participants,
                                 }
 
-                                // console.log(betObj.description, betObj.bets)
-                                // console.log()
                                 matchupBets.bets.push(betObj);
                                 ids.push(matchup.id)
                             }
@@ -140,39 +144,42 @@ export const getPinnacleData = () => {
         matchups.push(matchupBets)
     }
 
-    for (const betObj of matchups[0].bets) {
-        const straightObj = straights.find(el => betObj.matchupId === el.matchupId)
-        // console.log(util.inspect(betObj.bets, { showHidden: false, depth: null }));
+    for (const matchupObj of matchups) {
+        for (const betObj of matchupObj.bets) {
+            // Find the corresponding straight object that contains the odds
+            const straightObj = straights.find(el => betObj.matchupId === el.matchupId)
 
-        // console.log(straightObj)
-        for (const betValue of betObj.bets) {
-            try {
-                const found = straightObj.prices.find(price => price.participantId === betValue.id)
-                // Check if odds exist for the bet
-                if (found) {
-                    const odds = parseFloat(UStoEU(found.price).toFixed(3))
-                    betValue.odds = odds
-                }
-                else {
-                    // Remove bets that don't have odds
-                    // TODO: Improve the safety: currently, it pops the values from the end until it finds the missing id
-                    let isLastElement = betObj.bets.map(el => el.id).indexOf(betValue.id) !== betObj.bets.length - 1; 
+            for (const betValue of betObj.bets) {
+                try {
+                    const found = straightObj.prices.find(price => price.participantId === betValue.id)
+                    // Check if odds exist for the bet
+                    if (found) {
+                        const odds = parseFloat(UStoEU(found.price).toFixed(3))
+                        betValue.odds = odds
+                    }
+                    else {
+                        // Remove bets that don't have odds
+                        let isLastElement = betObj.bets.map(el => el.id).indexOf(betValue.id) !== betObj.bets.length - 1; 
 
-                    if (isLastElement) {
-                        while (isLastElement) { 
-                            betObj.bets.pop()
-                            isLastElement = betObj.bets.map(el => el.id).indexOf(betValue.id) !== betObj.bets.length - 1; 
-                        } 
-                        // Remove the last empty element
-                        betObj.bets.pop()
+                        if (isLastElement) {
+                            betObj.bets = betObj.bets.filter(el => el.odds);
+
+                            while (isLastElement) { 
+                                betObj.bets.pop()
+                                isLastElement = betObj.bets.map(el => el.id).indexOf(betValue.id) !== betObj.bets.length - 1; 
+                            } 
+                        }
+                        // console.log(betObj);
+                        // console.log();
                     }
                 }
-            }
-            catch (err) {
-                console.log(err)
+                catch (err) {
+                    console.log(err)
+                }
             }
         }
+
     }
 
-    return matchups
+    return { league, matchups };
 }

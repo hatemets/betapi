@@ -1,18 +1,20 @@
-import fetch from "node-fetch";
 import fs from "fs";
 import util from "util";
 import { getPinnacleData } from "./src/pinnacle.js";
+import { getGGBetData } from "./src/ggbet.js";
+import stringSimilarity from "string-similarity";
+
 
 (async () => {
-    // const response = await fetch(url)
-    //     .then(res => res.json())
-    //     .catch(err => console.log(err))
+    const pinnacleSoccer = await getPinnacleData();
+    console.log(util.inspect(pinnacleSoccer.matchups[0], false, null))
+    fs.writeFileSync("./data/pinnacle.json", JSON.stringify(pinnacleSoccer, null, 4))
 
-    // // fs.writeFileSync("./ggbet.json", JSON.stringify(response));
-    // const game = response[0];
+    // const ggbetData = await getGGBetData();
+    // console.log(ggbetData);
 
-    const matchups = getPinnacleData();
-    console.log(util.inspect(matchups[0].bets, { showHidden: false, depth: null }))
+
+    // fs.writeFileSync("./data/ggbet.json", JSON.stringify(ggBetMatchups, null, 4))
 
     console.log("Process finished")
 })();
