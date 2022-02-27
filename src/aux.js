@@ -1,4 +1,5 @@
 import fetch from "node-fetch"
+import { pinnacleKey } from "./constants.js"
 
 // remove these keys
 const unnecessaryKeysPinnacle = [
@@ -46,11 +47,22 @@ export const removeDuplicates = objects => {
     return uniques
 }
 
-export const getAPIData = (url, key) => fetch(url, {
-        method: 'GET',
-        headers: { "x-api-key": key },
-        redirect: 'follow'
-    })
+var options = {
+  'method': 'GET',
+  'hostname': 'guest.api.arcadia.pinnacle.com',
+  'path': '/0.1/leagues/1980/matchups',
+  'headers': {
+  },
+  'maxRedirects': 20
+};
+
+export const getAPIData = url => fetch(url, {
+    method: 'GET',
+    headers: {
+        "x-api-key": pinnacleKey,
+    },
+    redirect: 'follow'
+})
     .then(res => res.json())
     .catch(err => console.log('Error: ', err));
 

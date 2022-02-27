@@ -27,15 +27,30 @@ export const getPinnacleData = async () => {
 
 
     // Contains objects with league's ID and name
-    const leagueObjects = leagues.map(league => ({ name: league.name, id: league.id, matchupCount: league.matchupCount }))
+    const leagueObjects = leagues.filter(league => league.matchupCountSE > 0).map(league => ({ name: league.name, id: league.id, matchupCount: league.matchupCountSE }))
+    console.log(leagueObjects);
+    // console.log(leagues);
+    // fs.writeFileSync("./uuuga.txt", JSON.stringify(leagues, null, 4))
+
+    // Contains promises that each league iteration creates
+    let promises = []
 
     for (const league of leagueObjects) {
         const baseUrl = `${pinnacleBaseUrl}/leagues/${league.id}`
+        // https://guest.api.arcadia.pinnacle.com/0.1/leagues/2036/matchups
 
-        getAPIData(`${baseUrl}/matchups`, pinnacleKey).then(matchupsData => {
-            cleanMatchupData(matchupsData)
+        // const x = await getAPIData("https://guest.api.arcadia.pinnacle.com/0.1/leagues/1980/matchups", "CmX2KcMrXuFmNg6YFbmTxE0y9CIrOi0R")
+        const url = `${baseUrl}/matchups`
 
-            getAPIData(`${baseUrl}/markets/straight`, pinnacleKey).then(straightsData => {
+        getAPIData(url).then(matchupsData => {
+            if (matchupsData.status === 403) {
+                throw new Error(`No available data for ${url}`)
+            }
+
+            getAPIData(`${baseUrl}/markets/straight`).then(straightsData => {
+                if (straightsData.status === 403) {
+                    throw new Error(`No available data for ${url}`)
+                }
 
                 for (const matchup of matchupsData) {
                     for (const [key, value] of Object.entries(matchup)) {
@@ -130,7 +145,7 @@ export const getPinnacleData = async () => {
 
                         for (const betValue of betObj.bets) {
                             try {
-                                console.log(straightObj.prices);
+                                // console.log(straightObj.prices);
                                 const found = straightObj.prices.find(price => price.participantId === betValue.id)
                                 // Check if odds exist for the bet
                                 if (found) {
@@ -160,8 +175,9 @@ export const getPinnacleData = async () => {
                 }
 
                 totalGames.push(matchups)
-            })
-        })
+            }).catch(err => console.log(err))
+        }).catch(err => console.log(err))
+
     }
 
     console.log(totalGames);
