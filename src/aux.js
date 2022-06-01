@@ -1,13 +1,23 @@
 import fetch from "node-fetch"
 import { pinnacleKey } from "./constants.js"
 
-// remove these keys
+// Remove these keys
 const unnecessaryKeysPinnacle = [
-    "ageLimit", "altTeaser", "external",
-    "featureOrder", "hasAltSpread", "hasAltTotal",
-    "hasLive", "isBetshareEnabled", "isFeatured",
-    "isHighlighted", "isLive", "isPromoted",
-    "liveMode", "rotation", "state",
+    "ageLimit",
+    "altTeaser",
+    "external",
+    "featureOrder",
+    "hasAltSpread",
+    "hasAltTotal",
+    "hasLive",
+    "isBetshareEnabled",
+    "isFeatured",
+    "isHighlighted",
+    "isLive",
+    "isPromoted",
+    "liveMode",
+    "rotation",
+    "state"
 ]
 
 export const redundantValuesGGBet = [ "id", "v", "score1", "score2", "team1_id", "team2_id", "isLive", "slug", "hash", "actual_at" ]
@@ -47,13 +57,14 @@ export const removeDuplicates = objects => {
     return uniques
 }
 
-var options = {
-  'method': 'GET',
-  'hostname': 'guest.api.arcadia.pinnacle.com',
-  'path': '/0.1/leagues/1980/matchups',
-  'headers': {
-  },
-  'maxRedirects': 20
+
+const options = {
+    'method': 'GET',
+    'hostname': 'guest.api.arcadia.pinnacle.com',
+    'path': '/0.1/leagues/1980/matchups',
+    'headers': {
+    },
+    'maxRedirects': 20
 };
 
 export const getAPIData = url => fetch(url, {
