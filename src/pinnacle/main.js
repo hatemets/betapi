@@ -1,10 +1,9 @@
 import fs from "fs"
-import { leaguesUrl, matchupsUrl, straightUrl, pinnacleKey, pinnacleBaseUrl } from "../constants.js"
-import { cleanMatchupData, UStoEU, redundantLines, getNameId, getAPIData } from "../helper.js"
+import { pinnacle } from "../constants.js"
 
 
 const fetchData = async () => {
-    console.log("working")
+    console.log(pinnacle)
 }
 
 

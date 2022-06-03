@@ -1,5 +1,5 @@
 import fetch from "node-fetch"
-import { pinnacleKey, unnecessaryKeysPinnacle } from "./constants.js"
+import { pinnacle } from "./constants.js"
 
 
 // Lines that are unnecessary in the value for the key "parent" in pinnacle data
@@ -7,10 +7,11 @@ export const redundantLines = ["correct score", "winning margin"]
 
 export const UStoEU = val => (val >= 0) ? val / 100 + 1 : 100 / Math.abs(val) + 1
 
+// NOTE: Only for pinnacle atm
 export const cleanMatchupData = matchupsData => {
     for (const matchup of matchupsData) {
         for (const key of Object.keys(matchup)) {
-            if (unnecessaryKeysPinnacle.includes(key)) {
+            if (pinnacle.irrelevantKeys.includes(key)) {
                 try {
                     // console.log(`deleting: ${key}`)
                     delete matchup[key]
@@ -49,7 +50,7 @@ const options = {
 export const getAPIData = url => fetch(url, {
     method: 'GET',
     headers: {
-        "x-api-key": pinnacleKey,
+        "x-api-key": pinnacle.apiKey,
     },
     redirect: 'follow'
 })
