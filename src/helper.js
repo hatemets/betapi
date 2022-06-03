@@ -1,33 +1,13 @@
 import fetch from "node-fetch"
-import { pinnacleKey } from "./constants.js"
+import { pinnacleKey, unnecessaryKeysPinnacle } from "./constants.js"
 
-// Remove these keys
-const unnecessaryKeysPinnacle = [
-    "ageLimit",
-    "altTeaser",
-    "external",
-    "featureOrder",
-    "hasAltSpread",
-    "hasAltTotal",
-    "hasLive",
-    "isBetshareEnabled",
-    "isFeatured",
-    "isHighlighted",
-    "isLive",
-    "isPromoted",
-    "liveMode",
-    "rotation",
-    "state"
-]
-
-export const redundantValuesGGBet = [ "id", "v", "score1", "score2", "team1_id", "team2_id", "isLive", "slug", "hash", "actual_at" ]
 
 // Lines that are unnecessary in the value for the key "parent" in pinnacle data
-export const redundantLines = ["correct score", "winning margin"];
+export const redundantLines = ["correct score", "winning margin"]
 
 export const UStoEU = val => (val >= 0) ? val / 100 + 1 : 100 / Math.abs(val) + 1
 
-export const cleanMatchupData = (matchupsData) => {
+export const cleanMatchupData = matchupsData => {
     for (const matchup of matchupsData) {
         for (const key of Object.keys(matchup)) {
             if (unnecessaryKeysPinnacle.includes(key)) {
@@ -49,14 +29,13 @@ export const removeDuplicates = objects => {
 
     for (const obj of objects) {
         if (!ids.includes(obj.id)) {
-            uniques.push(obj);
-            ids.push(obj.id);
+            uniques.push(obj)
+            ids.push(obj.id)
         }
     }
 
     return uniques
 }
-
 
 const options = {
     'method': 'GET',
@@ -65,7 +44,7 @@ const options = {
     'headers': {
     },
     'maxRedirects': 20
-};
+}
 
 export const getAPIData = url => fetch(url, {
     method: 'GET',
@@ -75,28 +54,28 @@ export const getAPIData = url => fetch(url, {
     redirect: 'follow'
 })
     .then(res => res.json())
-    .catch(err => console.log('Error: ', err));
+    .catch(err => console.log('Error: ', err))
 
 export const getNameId = teams => {
-    let id = teams.reduce((team1, team2) => team1 + team2).hashCode();
+    let id = teams.reduce((team1, team2) => team1 + team2).hashCode()
 
     if (id < 0) {
         // Replace minus sign with 1
-        id = parseInt(id.toString().replace("-", "1"));
+        id = parseInt(id.toString().replace("-", "1"))
     }
 
-    return id;
+    return id
 }
 
 // Add a function to string class
 String.prototype.hashCode = function () {
-    let hash = 0;
+    let hash = 0
 
     for (let i = 0; i < this.length; i++) {
-        let char = this.charCodeAt(i);
-        hash = ((hash << 5) - hash) + char;
-        hash = hash & hash; // Convert to 32bit integer
+        let char = this.charCodeAt(i)
+        hash = ((hash << 5) - hash) + char
+        hash = hash & hash                     // Convert to 32bit integer
     }
 
-    return hash;
+    return hash
 }
