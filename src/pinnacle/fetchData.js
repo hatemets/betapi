@@ -1,9 +1,9 @@
 import axios from "axios"
 import { pinnacle } from "../constants.js"
 
-const { baseUrl, apiKey, matchupUrl } = pinnacle
+const { apiKey } = pinnacle
 
-const fetchData = async () => {
+const fetchData = async url => {
     const headers = {
         "Accept": "application/json", 
         "Content-Type": "application/json", 
@@ -11,7 +11,7 @@ const fetchData = async () => {
     }
 
     try {
-        const res = await axios.get(baseUrl + matchupUrl, { headers })
+        const res = await axios.get(url, { headers })
         return res
     }
     catch (err) {

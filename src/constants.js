@@ -6,23 +6,37 @@ export const pinnacle = {
     baseUrl: "https://guest.api.arcadia.pinnacle.com/0.1",
     apiKey: "CmX2KcMrXuFmNg6YFbmTxE0y9CIrOi0R",
     matchupUrl: "/leagues/206571/matchups",
-    irrelevantKeys: [
-        "ageLimit",
-        "altTeaser",
-        "external",
-        "featureOrder",
-        "hasAltSpread",
-        "hasAltTotal",
-        "hasLive",
-        "isBetshareEnabled",
-        "isFeatured",
-        "isHighlighted",
-        "isLive",
-        "isPromoted",
-        "liveMode",
-        "rotation",
-        "state"
-    ]
+    leaguesUrl: "/sports/29/leagues",
+    irrelevantKeys: {
+        matchups: [
+            "ageLimit",
+            "altTeaser",
+            "external",
+            "featureOrder",
+            "hasAltSpread",
+            "hasAltTotal",
+            "hasLive",
+            "isBetshareEnabled",
+            "isFeatured",
+            "isHighlighted",
+            "isLive",
+            "isPromoted",
+            "liveMode",
+            "rotation",
+            "state"
+        ],
+        leagues: [
+            "ageLimit",
+            "featureOrder",
+            "external",
+            "isHidden",
+            "isFeatured",
+            "isPromoted",
+            "isSticky",
+            "matchupCountSE",
+            "sport"
+        ]
+    }
 }
 
 /* GGBet */

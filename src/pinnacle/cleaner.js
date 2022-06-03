@@ -1,13 +1,16 @@
 import { pinnacle } from "../constants.js"
 
-const cleanMatchupData = matchups => {
+
+// The data is an object and redundantKeys is an array containing the names of the redundant keys
+const cleanData = (data, redundantKeys) => {
     const cleanedMatchups = []
 
-    for (const matchup of Object.entries(matchups)) {
+    for (const matchup of Object.entries(data)) {
+        // The second entry is the actual object (the first entry is an index related to the object)
         const matchupObj = matchup[1]
 
         // Remove irrelevant keys from the matchups object
-        pinnacle.irrelevantKeys.forEach(key => delete matchupObj[key])
+        redundantKeys.forEach(key => delete matchupObj[key])
 
         // Insert the cleaned matchup object to the array
         cleanedMatchups.push(matchupObj)
@@ -17,4 +20,4 @@ const cleanMatchupData = matchups => {
 }
 
 
-export default cleanMatchupData
+export default cleanData
