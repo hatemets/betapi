@@ -15,7 +15,7 @@ const fetchData = async url => {
         return res
     }
     catch (err) {
-        console.error("Error fetching pinnacle data")
+        console.error("Error fetching data from Pinnacle")
         console.error(err)
     }
 }

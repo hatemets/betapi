@@ -6,14 +6,8 @@ import getLeagues from "./getLeagues.js"
 import getMatchups from "./getMatchups.js"
 
 
-const getData = async (writeToFile = false) => {
-    const matchups = await getMatchups()
-    const leagues = await getLeagues()
-
-    if (writeToFile) {
-        fs.writeFileSync("./data/pinnacle/leagues.json", JSON.stringify(leagues, null, "\t"))
-        fs.writeFileSync("./data/pinnacle/matchups.json", JSON.stringify(matchups, null, "\t"))
-    }
+const getData = async () => {
+    const matchups = await getMatchups(true)
 
     // const matchups = cleanData(response.data)
     // return matchups

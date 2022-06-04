@@ -4,6 +4,6 @@ import getPinnacleData from "./src/pinnacle/main.js"
 
 
 (async () => {
-    const pinnacleSoccer = await getPinnacleData(false)
+    await getPinnacleData(false)
     console.log("Process finished")
 })()
