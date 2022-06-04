@@ -1,0 +1,1064 @@
+[
+	{
+		"group": "Finland",
+		"id": 2018,
+		"matchupCount": 6,
+		"name": "Finland - Kakkonen"
+	},
+	{
+		"group": "Norway",
+		"id": 216989,
+		"matchupCount": 4,
+		"name": "Norway - 3rd Division Group 2"
+	},
+	{
+		"group": "Finland",
+		"id": 197235,
+		"matchupCount": 2,
+		"name": "Finland - Kansallinen Women"
+	},
+	{
+		"group": "USA",
+		"id": 219120,
+		"matchupCount": 6,
+		"name": "USA - MLS Next Pro League"
+	},
+	{
+		"group": "Argentina",
+		"id": 202608,
+		"matchupCount": 12,
+		"name": "Argentina - Torneo Federal A"
+	},
+	{
+		"group": "UEFA",
+		"id": 2627,
+		"matchupCount": 1,
+		"name": "UEFA - Champions League"
+	},
+	{
+		"group": "Estonia",
+		"id": 201775,
+		"matchupCount": 1,
+		"name": "Estonia - Esiliiga A"
+	},
+	{
+		"group": "Australia",
+		"id": 219046,
+		"matchupCount": 1,
+		"name": "Australia - Queensland Premier League Women"
+	},
+	{
+		"group": "Norway",
+		"id": 201285,
+		"matchupCount": 6,
+		"name": "Norway - 3rd Division Group 1"
+	},
+	{
+		"group": "Algeria",
+		"id": 8667,
+		"matchupCount": 5,
+		"name": "Algeria - Ligue 1"
+	},
+	{
+		"group": "FIFA",
+		"id": 219415,
+		"matchupCount": 1,
+		"name": "FIFA - World Cup Qualifiers Intercontinental"
+	},
+	{
+		"group": "Argentina",
+		"id": 201153,
+		"matchupCount": 3,
+		"name": "Argentina - Primera D Metropolitana"
+	},
+	{
+		"group": "South Korea",
+		"id": 207553,
+		"matchupCount": 7,
+		"name": "Korea Republic - K3 League"
+	},
+	{
+		"group": "Switzerland",
+		"id": 219077,
+		"matchupCount": 3,
+		"name": "Switzerland - Promotion League"
+	},
+	{
+		"group": "Germany",
+		"id": 191448,
+		"matchupCount": 8,
+		"name": "Germany - Oberliga Nordost Nord"
+	},
+	{
+		"group": "Colombia",
+		"id": 5591,
+		"matchupCount": 8,
+		"name": "Colombia - Primera A"
+	},
+	{
+		"group": "Poland",
+		"id": 216988,
+		"matchupCount": 9,
+		"name": "Poland - 3rd Liga Group 4"
+	},
+	{
+		"group": "Germany",
+		"id": 197471,
+		"matchupCount": 1,
+		"name": "Germany - Oberliga Westfalen"
+	},
+	{
+		"group": "Brazil",
+		"id": 213318,
+		"matchupCount": 2,
+		"name": "Brazil - Mineiro U20"
+	},
+	{
+		"group": "Brazil",
+		"id": 210906,
+		"matchupCount": 1,
+		"name": "Brazil - Pernambucano U20"
+	},
+	{
+		"group": "Sweden",
+		"id": 2484,
+		"matchupCount": 7,
+		"name": "Sweden - 2nd Div. Sodra Gotaland"
+	},
+	{
+		"group": "Australia",
+		"id": 218678,
+		"matchupCount": 3,
+		"name": "Australia - NPL Victoria U21"
+	},
+	{
+		"group": "UEFA",
+		"id": 200726,
+		"matchupCount": 9,
+		"name": "UEFA - Nations League C"
+	},
+	{
+		"group": "Norway",
+		"id": 196861,
+		"matchupCount": 5,
+		"name": "Norway - Toppserien Women"
+	},
+	{
+		"group": "Chile",
+		"id": 10279,
+		"matchupCount": 2,
+		"name": "Chile - Primera B"
+	},
+	{
+		"group": "Austria",
+		"id": 201501,
+		"matchupCount": 4,
+		"name": "Austria - Landesliga"
+	},
+	{
+		"group": "USA",
+		"id": 201813,
+		"matchupCount": 7,
+		"name": "USA - NPSL"
+	},
+	{
+		"group": "Denmark",
+		"id": 214819,
+		"matchupCount": 6,
+		"name": "Denmark - 3rd Division"
+	},
+	{
+		"group": "Australia",
+		"id": 219117,
+		"matchupCount": 1,
+		"name": "Australia - Western Australia State League 1"
+	},
+	{
+		"group": "Australia",
+		"id": 8588,
+		"matchupCount": 3,
+		"name": "Australia - NPL New South Wales"
+	},
+	{
+		"group": "Brazil",
+		"id": 201811,
+		"matchupCount": 1,
+		"name": "Brazil - Catarinense 2"
+	},
+	{
+		"group": "Poland",
+		"id": 216986,
+		"matchupCount": 7,
+		"name": "Poland - 3rd Liga Group 2"
+	},
+	{
+		"group": "Brazil",
+		"id": 201334,
+		"matchupCount": 8,
+		"name": "Brazil - Paulista Serie B"
+	},
+	{
+		"group": "USA",
+		"id": 201065,
+		"matchupCount": 11,
+		"name": "USA - USL Championship"
+	},
+	{
+		"group": "Slovakia",
+		"id": 210303,
+		"matchupCount": 10,
+		"name": "Slovakia - Liga III"
+	},
+	{
+		"group": "Portugal",
+		"id": 196966,
+		"matchupCount": 1,
+		"name": "Portugal - 1st Division Women"
+	},
+	{
+		"group": "Poland",
+		"id": 201204,
+		"matchupCount": 9,
+		"name": "Poland - 3rd Liga Group 1"
+	},
+	{
+		"group": "UEFA",
+		"id": 200719,
+		"matchupCount": 10,
+		"name": "UEFA - Nations League A"
+	},
+	{
+		"group": "Norway",
+		"id": 216992,
+		"matchupCount": 5,
+		"name": "Norway - 3rd Division Group 5"
+	},
+	{
+		"group": "CONMEBOL",
+		"id": 2472,
+		"matchupCount": 8,
+		"name": "CONMEBOL - Copa Sudamericana"
+	},
+	{
+		"group": "Bosnia and Herzegovina",
+		"id": 210572,
+		"matchupCount": 3,
+		"name": "Bosnia and Herzegovina - 1st League"
+	},
+	{
+		"group": "Finland",
+		"id": 2025,
+		"matchupCount": 3,
+		"name": "Finland - Ykkonen"
+	},
+	{
+		"group": "Norway",
+		"id": 216991,
+		"matchupCount": 3,
+		"name": "Norway - 3rd Division Group 4"
+	},
+	{
+		"group": "France",
+		"id": 197590,
+		"matchupCount": 1,
+		"name": "France - U19 League"
+	},
+	{
+		"group": "Uruguay",
+		"id": 5593,
+		"matchupCount": 7,
+		"name": "Uruguay - Primera Division"
+	},
+	{
+		"group": "Australia",
+		"id": 10984,
+		"matchupCount": 2,
+		"name": "Australia - FFA Cup Qualifiers"
+	},
+	{
+		"group": "Sweden",
+		"id": 2486,
+		"matchupCount": 5,
+		"name": "Sweden - 2nd Div. Vastra Gotaland"
+	},
+	{
+		"group": "Czech Republic",
+		"id": 201192,
+		"matchupCount": 21,
+		"name": "Czech Republic - 3. Liga"
+	},
+	{
+		"group": "Spain",
+		"id": 201069,
+		"matchupCount": 1,
+		"name": "Spain - U19 League"
+	},
+	{
+		"group": "USA",
+		"id": 201290,
+		"matchupCount": 4,
+		"name": "USA - National Women's Soccer League"
+	},
+	{
+		"group": "England",
+		"id": 1953,
+		"matchupCount": 1,
+		"name": "England - Community Shield"
+	},
+	{
+		"group": "Colombia",
+		"id": 10921,
+		"matchupCount": 4,
+		"name": "Colombia - Primera B"
+	},
+	{
+		"group": "Brazil",
+		"id": 210902,
+		"matchupCount": 5,
+		"name": "Brazil - Brasileiro U20"
+	},
+	{
+		"group": "England",
+		"id": 1980,
+		"matchupCount": 1,
+		"name": "England - Premier League"
+	},
+	{
+		"group": "Australia",
+		"id": 10136,
+		"matchupCount": 1,
+		"name": "Australia - National Youth League U20"
+	},
+	{
+		"group": "AFC",
+		"id": 35179,
+		"matchupCount": 8,
+		"name": "AFC - U23 Championship"
+	},
+	{
+		"group": "South Korea",
+		"id": 207552,
+		"matchupCount": 6,
+		"name": "Korea Republic - K League 2"
+	},
+	{
+		"group": "Canada",
+		"id": 1850,
+		"matchupCount": 1,
+		"name": "Canada - Championship"
+	},
+	{
+		"group": "Brazil",
+		"id": 219549,
+		"matchupCount": 3,
+		"name": "Brazil - Copa Santa Catarina U20"
+	},
+	{
+		"group": "Australia",
+		"id": 194796,
+		"matchupCount": 6,
+		"name": "Australia - NPL 2 New South Wales"
+	},
+	{
+		"group": "Argentina",
+		"id": 201149,
+		"matchupCount": 7,
+		"name": "Argentina - Primera B Metropolitana"
+	},
+	{
+		"group": "Australia",
+		"id": 212505,
+		"matchupCount": 1,
+		"name": "Australia - NPL 3 Victoria"
+	},
+	{
+		"group": "Argentina",
+		"id": 208258,
+		"matchupCount": 8,
+		"name": "Argentina - Primera Division Women"
+	},
+	{
+		"group": "FIFA",
+		"id": 2015,
+		"matchupCount": 2,
+		"name": "FIFA - World Cup Qualifiers Europe"
+	},
+	{
+		"group": "Spain",
+		"id": 2196,
+		"matchupCount": 1,
+		"name": "Spain - La Liga"
+	},
+	{
+		"group": "Spain",
+		"id": 2432,
+		"matchupCount": 2,
+		"name": "Spain - Segunda Division"
+	},
+	{
+		"group": "Sweden",
+		"id": 191455,
+		"matchupCount": 7,
+		"name": "Sweden - 2nd Div. Norra Gotaland"
+	},
+	{
+		"group": "Italy",
+		"id": 212578,
+		"matchupCount": 2,
+		"name": "Italy - Serie D Group G"
+	},
+	{
+		"group": "Australia",
+		"id": 213666,
+		"matchupCount": 1,
+		"name": "Australia - Queensland Premier League"
+	},
+	{
+		"group": "Croatia",
+		"id": 201199,
+		"matchupCount": 6,
+		"name": "Croatia - U19"
+	},
+	{
+		"group": "Norway",
+		"id": 201957,
+		"matchupCount": 5,
+		"name": "Norway - 1st Division Women"
+	},
+	{
+		"group": "Japan",
+		"id": 2159,
+		"matchupCount": 21,
+		"name": "Japan - J2 League"
+	},
+	{
+		"group": "Austria",
+		"id": 219057,
+		"matchupCount": 1,
+		"name": "Austria - Regionalliga Vorarlberg"
+	},
+	{
+		"group": "Australia",
+		"id": 196909,
+		"matchupCount": 6,
+		"name": "Australia - NPL Women"
+	},
+	{
+		"group": "Ivory Coast",
+		"id": 217754,
+		"matchupCount": 6,
+		"name": "Ivory Coast - Ligue 1"
+	},
+	{
+		"group": "World",
+		"id": 2112,
+		"matchupCount": 2,
+		"name": "International - Friendlies U19"
+	},
+	{
+		"group": "Japan",
+		"id": 209509,
+		"matchupCount": 4,
+		"name": "Japan - Nadeshiko Division 2 Women"
+	},
+	{
+		"group": "Germany",
+		"id": 1842,
+		"matchupCount": 1,
+		"name": "Germany - Bundesliga"
+	},
+	{
+		"group": "Peru",
+		"id": 201986,
+		"matchupCount": 3,
+		"name": "Peru - Segunda Liga"
+	},
+	{
+		"group": "Sweden",
+		"id": 1903,
+		"matchupCount": 5,
+		"name": "Sweden - Damallsvenskan"
+	},
+	{
+		"group": "Germany",
+		"id": 191450,
+		"matchupCount": 10,
+		"name": "Germany - Oberliga Rheinland-Pfalz/Saar"
+	},
+	{
+		"group": "Argentina",
+		"id": 1739,
+		"matchupCount": 17,
+		"name": "Argentina - Primera B Nacional"
+	},
+	{
+		"group": "Kenya",
+		"id": 187707,
+		"matchupCount": 6,
+		"name": "Kenya - Premier League"
+	},
+	{
+		"group": "Russian Federation",
+		"id": 196776,
+		"matchupCount": 5,
+		"name": "Russia - Supreme Division Women"
+	},
+	{
+		"group": "Germany",
+		"id": 200814,
+		"matchupCount": 6,
+		"name": "Germany - Bundesliga 2 Women"
+	},
+	{
+		"group": "Iceland",
+		"id": 197236,
+		"matchupCount": 1,
+		"name": "Iceland - 1. Deild Women"
+	},
+	{
+		"group": "Germany",
+		"id": 2054,
+		"matchupCount": 1,
+		"name": "Germany - Super Cup"
+	},
+	{
+		"group": "Iceland",
+		"id": 201869,
+		"matchupCount": 1,
+		"name": "Iceland - 3. Deild"
+	},
+	{
+		"group": "Jamaica",
+		"id": 10407,
+		"matchupCount": 4,
+		"name": "Jamaica - Premier League"
+	},
+	{
+		"group": "Norway",
+		"id": 2333,
+		"matchupCount": 8,
+		"name": "Norway - Eliteserien"
+	},
+	{
+		"group": "Poland",
+		"id": 216987,
+		"matchupCount": 9,
+		"name": "Poland - 3rd Liga Group 3"
+	},
+	{
+		"group": "Japan",
+		"id": 4995,
+		"matchupCount": 3,
+		"name": "Japan - League Cup"
+	},
+	{
+		"group": "Brazil",
+		"id": 1835,
+		"matchupCount": 8,
+		"name": "Brazil - Serie B"
+	},
+	{
+		"group": "Australia",
+		"id": 1753,
+		"matchupCount": 3,
+		"name": "Australia - NPL South Australia"
+	},
+	{
+		"group": "USA",
+		"id": 2663,
+		"matchupCount": 5,
+		"name": "USA - Major League Soccer"
+	},
+	{
+		"group": "Romania",
+		"id": 201155,
+		"matchupCount": 3,
+		"name": "Romania - Liga 3"
+	},
+	{
+		"group": "Brazil",
+		"id": 204522,
+		"matchupCount": 3,
+		"name": "Brazil - Mineiro 2"
+	},
+	{
+		"group": "Australia",
+		"id": 194630,
+		"matchupCount": 1,
+		"name": "Australia - South Australia State League 1"
+	},
+	{
+		"group": "FIFA",
+		"id": 2014,
+		"matchupCount": 1,
+		"name": "FIFA - World Cup Qualifiers Asia"
+	},
+	{
+		"group": "South Korea",
+		"id": 207551,
+		"matchupCount": 6,
+		"name": "Korea Republic - K League 1"
+	},
+	{
+		"group": "England",
+		"id": 1978,
+		"matchupCount": 1,
+		"name": "England - National League"
+	},
+	{
+		"group": "Denmark",
+		"id": 201505,
+		"matchupCount": 12,
+		"name": "Denmark - Denmark Series"
+	},
+	{
+		"group": "Norway",
+		"id": 216993,
+		"matchupCount": 4,
+		"name": "Norway - 3rd Division Group 6"
+	},
+	{
+		"group": "Sweden",
+		"id": 2485,
+		"matchupCount": 3,
+		"name": "Sweden - 2nd Div. Sodra Svealand"
+	},
+	{
+		"group": "Brazil",
+		"id": 1836,
+		"matchupCount": 6,
+		"name": "Brazil - Serie C"
+	},
+	{
+		"group": "Spain",
+		"id": 220076,
+		"matchupCount": 2,
+		"name": "Spain - Primera RFEF"
+	},
+	{
+		"group": "UEFA",
+		"id": 200727,
+		"matchupCount": 3,
+		"name": "UEFA - Nations League D"
+	},
+	{
+		"group": "UEFA",
+		"id": 2640,
+		"matchupCount": 9,
+		"name": "UEFA - EURO Women"
+	},
+	{
+		"group": "Sweden",
+		"id": 2481,
+		"matchupCount": 5,
+		"name": "Sweden - 2nd Div. Norra Svealand"
+	},
+	{
+		"group": "South Africa",
+		"id": 196763,
+		"matchupCount": 1,
+		"name": "South Africa - PSL"
+	},
+	{
+		"group": "Iceland",
+		"id": 2100,
+		"matchupCount": 2,
+		"name": "Iceland - 1. Deild"
+	},
+	{
+		"group": "Denmark",
+		"id": 215029,
+		"matchupCount": 1,
+		"name": "Denmark - Division 2 Women"
+	},
+	{
+		"group": "Canada",
+		"id": 205098,
+		"matchupCount": 3,
+		"name": "Canada - Premier League"
+	},
+	{
+		"group": "Brazil",
+		"id": 1834,
+		"matchupCount": 16,
+		"name": "Brazil - Serie A"
+	},
+	{
+		"group": "Australia",
+		"id": 8594,
+		"matchupCount": 3,
+		"name": "Australia - NPL Northern NSW"
+	},
+	{
+		"group": "Venezuela",
+		"id": 5596,
+		"matchupCount": 2,
+		"name": "Venezuela - Primera Division"
+	},
+	{
+		"group": "Ireland",
+		"id": 209852,
+		"matchupCount": 2,
+		"name": "Ireland - National League Women"
+	},
+	{
+		"group": "World",
+		"id": 1863,
+		"matchupCount": 1,
+		"name": "Club Friendlies"
+	},
+	{
+		"group": "Peru",
+		"id": 2366,
+		"matchupCount": 2,
+		"name": "Peru - Primera Division"
+	},
+	{
+		"group": "Germany",
+		"id": 191449,
+		"matchupCount": 7,
+		"name": "Germany - Oberliga Nordost Sud"
+	},
+	{
+		"group": "Germany",
+		"id": 2073,
+		"matchupCount": 8,
+		"name": "Germany - Oberliga Baden-Wurttemberg"
+	},
+	{
+		"group": "Australia",
+		"id": 208181,
+		"matchupCount": 1,
+		"name": "Australia - NPL Queensland Youth League U23"
+	},
+	{
+		"group": "Bolivia",
+		"id": 5595,
+		"matchupCount": 2,
+		"name": "Bolivia - Primera Division"
+	},
+	{
+		"group": "Netherlands",
+		"id": 202454,
+		"matchupCount": 6,
+		"name": "Netherlands - Tweede Divisie"
+	},
+	{
+		"group": "Portugal",
+		"id": 202558,
+		"matchupCount": 1,
+		"name": "Portugal - Campeonato de Portugal Prio"
+	},
+	{
+		"group": "CAF",
+		"id": 1713,
+		"matchupCount": 10,
+		"name": "CAF - Africa Cup of Nations Qualifiers"
+	},
+	{
+		"group": "Sweden",
+		"id": 2487,
+		"matchupCount": 7,
+		"name": "Sweden - 2nd Div. Norrland"
+	},
+	{
+		"group": "Finland",
+		"id": 201512,
+		"matchupCount": 4,
+		"name": "Finland - Kolmonen"
+	},
+	{
+		"group": "Australia",
+		"id": 8586,
+		"matchupCount": 5,
+		"name": "Australia - NPL Western Australia"
+	},
+	{
+		"group": "Japan",
+		"id": 209517,
+		"matchupCount": 4,
+		"name": "Japan - Nadeshiko Division 1 Women"
+	},
+	{
+		"group": "USA",
+		"id": 205322,
+		"matchupCount": 4,
+		"name": "USA - USL League One"
+	},
+	{
+		"group": "Sweden",
+		"id": 2510,
+		"matchupCount": 8,
+		"name": "Sweden - Division 1 Norra"
+	},
+	{
+		"group": "Norway",
+		"id": 2332,
+		"matchupCount": 2,
+		"name": "Norway - 2nd Division"
+	},
+	{
+		"group": "Ecuador",
+		"id": 219609,
+		"matchupCount": 2,
+		"name": "Ecuador - Cup"
+	},
+	{
+		"group": "Denmark",
+		"id": 187661,
+		"matchupCount": 6,
+		"name": "Denmark - Elitedivisionen Women"
+	},
+	{
+		"group": "Turkey",
+		"id": 212879,
+		"matchupCount": 10,
+		"name": "Turkey - U19 League"
+	},
+	{
+		"group": "Brazil",
+		"id": 210272,
+		"matchupCount": 3,
+		"name": "Brazil - Carioca U20"
+	},
+	{
+		"group": "Argentina",
+		"id": 201151,
+		"matchupCount": 6,
+		"name": "Argentina - Primera C Metropolitana"
+	},
+	{
+		"group": "World",
+		"id": 2117,
+		"matchupCount": 6,
+		"name": "International - Friendlies"
+	},
+	{
+		"group": "Uruguay",
+		"id": 205369,
+		"matchupCount": 6,
+		"name": "Uruguay - Segunda Division"
+	},
+	{
+		"group": "Sweden",
+		"id": 1728,
+		"matchupCount": 8,
+		"name": "Sweden - Allsvenskan"
+	},
+	{
+		"group": "Italy",
+		"id": 199868,
+		"matchupCount": 1,
+		"name": "Italy - Serie C"
+	},
+	{
+		"group": "Lebanon",
+		"id": 2205,
+		"matchupCount": 1,
+		"name": "Lebanon - Premier League"
+	},
+	{
+		"group": "Norway",
+		"id": 216990,
+		"matchupCount": 6,
+		"name": "Norway - 3rd Division Group 3"
+	},
+	{
+		"group": "World",
+		"id": 206571,
+		"matchupCount": 4,
+		"name": "CONCACAF - Nations League"
+	},
+	{
+		"group": "Denmark",
+		"id": 209838,
+		"matchupCount": 1,
+		"name": "Denmark - Division 1 Women"
+	},
+	{
+		"group": "Denmark",
+		"id": 191393,
+		"matchupCount": 3,
+		"name": "Denmark - 2nd Division"
+	},
+	{
+		"group": "Germany",
+		"id": 196875,
+		"matchupCount": 1,
+		"name": "Germany - Regionalliga Playoff"
+	},
+	{
+		"group": "Japan",
+		"id": 2157,
+		"matchupCount": 9,
+		"name": "Japan - J League"
+	},
+	{
+		"group": "World",
+		"id": 2562,
+		"matchupCount": 2,
+		"name": "International - Maurice Revello Youth Tournament"
+	},
+	{
+		"group": "Iceland",
+		"id": 197293,
+		"matchupCount": 2,
+		"name": "Iceland - 2. Deild"
+	},
+	{
+		"group": "Brazil",
+		"id": 210903,
+		"matchupCount": 2,
+		"name": "Brazil - Paulista U20"
+	},
+	{
+		"group": "UEFA",
+		"id": 5983,
+		"matchupCount": 2,
+		"name": "UEFA - U19 Euro Championship Qualifiers"
+	},
+	{
+		"group": "UEFA",
+		"id": 5982,
+		"matchupCount": 6,
+		"name": "UEFA - U21 European Championship Qualifiers"
+	},
+	{
+		"group": "USA",
+		"id": 201642,
+		"matchupCount": 12,
+		"name": "USA - USL League 2"
+	},
+	{
+		"group": "Lithuania",
+		"id": 201890,
+		"matchupCount": 1,
+		"name": "Lithuania -  1 Lyga"
+	},
+	{
+		"group": "Australia",
+		"id": 8584,
+		"matchupCount": 5,
+		"name": "Australia - NPL Queensland"
+	},
+	{
+		"group": "Brazil",
+		"id": 201364,
+		"matchupCount": 7,
+		"name": "Brazil - Brasileiro Women"
+	},
+	{
+		"group": "China",
+		"id": 11670,
+		"matchupCount": 2,
+		"name": "China - Super League Corners"
+	},
+	{
+		"group": "Japan",
+		"id": 10078,
+		"matchupCount": 7,
+		"name": "Japan - J3 League"
+	},
+	{
+		"group": "Paraguay",
+		"id": 201859,
+		"matchupCount": 2,
+		"name": "Paraguay - Division Intermedia"
+	},
+	{
+		"group": "Brazil",
+		"id": 219613,
+		"matchupCount": 1,
+		"name": "Brazil - Amapaense"
+	},
+	{
+		"group": "Australia",
+		"id": 1769,
+		"matchupCount": 4,
+		"name": "Australia - NPL Victoria"
+	},
+	{
+		"group": "Brazil",
+		"id": 201371,
+		"matchupCount": 25,
+		"name": "Brazil - Serie D"
+	},
+	{
+		"group": "UEFA",
+		"id": 200721,
+		"matchupCount": 10,
+		"name": "UEFA - Nations League B"
+	},
+	{
+		"group": "World",
+		"id": 2686,
+		"matchupCount": 35,
+		"name": "FIFA - World Cup"
+	},
+	{
+		"group": "Sweden",
+		"id": 2513,
+		"matchupCount": 7,
+		"name": "Sweden - Division 1 Sodra"
+	},
+	{
+		"group": "Australia",
+		"id": 214554,
+		"matchupCount": 1,
+		"name": "Australia - Western Australia State League Night Series"
+	},
+	{
+		"group": "Argentina",
+		"id": 210697,
+		"matchupCount": 13,
+		"name": "Argentina - Liga Pro"
+	},
+	{
+		"group": "Algeria",
+		"id": 218035,
+		"matchupCount": 2,
+		"name": "Algeria - League 1 U21"
+	},
+	{
+		"group": "China",
+		"id": 6417,
+		"matchupCount": 57,
+		"name": "China - Super League"
+	},
+	{
+		"group": "Australia",
+		"id": 214179,
+		"matchupCount": 3,
+		"name": "Australia - Queensland Premier League 2"
+	},
+	{
+		"group": "Austria",
+		"id": 206303,
+		"matchupCount": 2,
+		"name": "Austria - Regionalliga Tirol"
+	},
+	{
+		"group": "CONMEBOL",
+		"id": 1875,
+		"matchupCount": 9,
+		"name": "CONMEBOL - Copa Libertadores"
+	},
+	{
+		"group": "UEFA",
+		"id": 2636,
+		"matchupCount": 1,
+		"name": "UEFA - Super Cup"
+	},
+	{
+		"group": "USA",
+		"id": 206791,
+		"matchupCount": 2,
+		"name": "USA - NISA"
+	},
+	{
+		"group": "Guatemala",
+		"id": 202739,
+		"matchupCount": 1,
+		"name": "Guatemala - Primera Division"
+	}
+]

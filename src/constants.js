@@ -1,4 +1,4 @@
-// Betting-api (GGBet, Marathonbet)
+/* Betting-api (GGBet, Marathonbet) */
 const bettingApiKey = "07bbcd102b2c4aa8bf9de833a8753e07c7590977ff124c559630e741b786605d"
 
 /* Pinnacle */
