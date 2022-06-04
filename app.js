@@ -1,9 +1,7 @@
-import fs from "fs"
-import util from "util"
-import getPinnacleData from "./src/pinnacle/main.js"
+import runPinnacle from "./src/pinnacle/main.js"
 
 
 (async () => {
-    await getPinnacleData(false)
+    await runPinnacle(false)
     console.log("Process finished")
 })()

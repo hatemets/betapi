@@ -18,7 +18,12 @@ const getMatchups = async (writeToFile = false) => {
     for (const id of leagueIds) {
         try {
             const matchup = await getSingleMatchup(id)
-            matchups.push(matchup)
+            if (matchup === undefined) {
+                console.log(`${id} does not have publicly available matchups`)
+            }
+            else {
+                matchups.push(matchup)
+            }
         }
         catch (err) {
             console.error(err)
@@ -29,6 +34,9 @@ const getMatchups = async (writeToFile = false) => {
         fs.writeFileSync("./data/pinnacle/matchups.json", JSON.stringify(matchups, null, "\t"))
     }
 
+    console.log(matchups)
+    console.log(matchups.length)
+
     return matchups
 }
 
@@ -37,12 +45,18 @@ const getMatchups = async (writeToFile = false) => {
 const getSingleMatchup = async leagueId => {
     const url = `${baseUrl}/leagues/${leagueId}/matchups`
 
-    // Make the request
-    const response = await fetchData(url)
-    // Clean the data
-    const cleaned = cleanData(response.data, irrelevantKeys.matchups)
+    try {
+        // Make the request
+        const response = await fetchData(url)
+        // Clean the data
+        const cleaned = cleanData(response.data, irrelevantKeys.matchups)
 
-    return cleaned
+        return cleaned
+    }
+    catch (err) {
+        // Access denied (403) for this route
+        return undefined
+    }
 }
 
 

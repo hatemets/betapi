@@ -6,11 +6,8 @@ import getLeagues from "./getLeagues.js"
 import getMatchups from "./getMatchups.js"
 
 
-const getData = async () => {
-    const matchups = await getMatchups(true)
-
-    // const matchups = cleanData(response.data)
-    // return matchups
+const run = async () => {
+    const matchups = await getMatchups(false)
 }
 
-export default getData
+export default run

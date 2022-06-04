@@ -6,7 +6,7 @@ export const pinnacle = {
     baseUrl: "https://guest.api.arcadia.pinnacle.com/0.1",
     apiKey: "CmX2KcMrXuFmNg6YFbmTxE0y9CIrOi0R",
     matchupUrl: "/leagues/206571/matchups",
-    leaguesUrl: "/sports/29/leagues",
+    leaguesUrl: "/sports/29/leagues?all=false",
     irrelevantKeys: {
         matchups: [
             "ageLimit",

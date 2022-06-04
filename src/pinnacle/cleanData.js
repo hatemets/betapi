@@ -1,6 +1,3 @@
-import { pinnacle } from "../constants.js"
-
-
 // The data is an object and redundantKeys is an array containing the names of the redundant keys
 const cleanData = (data, redundantKeys) => {
     const cleanedMatchups = []
